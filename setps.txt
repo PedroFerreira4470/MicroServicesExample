@@ -1,0 +1,8 @@
+restart:
+-docker build -t pd4470/platformservice .
+	same for commandService
+-docker push pd4470/platformservice
+	same for commandService
+kubectl get deployment
+kubectl rollout restart deployment platforms-depl
+	same commands-depl
